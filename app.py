@@ -27,7 +27,7 @@ def items():
            return Response("{'Message':'Item deleted'}", status=200,mimetype='application/json')
 
 if __name__=='__main__':
-    app.run(port=config['DEFAULT']['Port'])
+    app.run(host='0.0.0.0',port=config['DEFAULT']['Port'])
         
 
     
